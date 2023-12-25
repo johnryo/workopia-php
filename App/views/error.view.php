@@ -7,7 +7,10 @@
       <?= $status ?>
     </div>
     <p class="text-center text-2xl mb-4"><?= $message ?></p>
-    <a href="/listings" class="block text-center">Back To Listings</a>
+    <a class="block p-4 text-blue-700 text-center" href="/listings">
+      <i class="fa fa-arrow-alt-circle-left"></i>
+      Back To Listings
+    </a>
   </div>
 </section>
 
