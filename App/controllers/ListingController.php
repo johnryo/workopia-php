@@ -278,7 +278,7 @@ class ListingController
     $keywords = isset($_GET['keywords']) ? trim($_GET['keywords']) : '';
     $location = isset($_GET['location']) ? trim($_GET['location']) : '';
 
-    $query = "SELECT * FROM listings WHERE (title LIKE :keywords OR description LIKE :keywords OR tags LIKE :keywords) AND (city LIKE :location OR state LIKE :location)";
+    $query = "SELECT * FROM listings WHERE (title LIKE :keywords OR description LIKE :keywords OR tags LIKE :keywords OR requirements LIKE :keywords) AND (city LIKE :location OR state LIKE :location)";
 
     $params = [
       'keywords' => "%{$keywords}%",
